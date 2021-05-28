@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 5px;
+    color: blue;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+    background: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+.main{
+    padding-top: 50px;
+    min-height: 100vh;
+    background: center / cover no-repeat url("/img/fond.jpg");
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 50%;
+    border: 1px solid white;
+    background: rgb(141, 141, 219);
+    margin-left: 20vw;
+    margin-top: 20px;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.vol{
+    text-align: center;
+}
+
+button, .vol input{
+    cursor: pointer;
+}
+
+label{
+    color: blue;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+

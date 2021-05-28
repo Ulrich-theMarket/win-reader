@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Nostalgie(France)",
+        "channel": "https://scdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3"
+    },
+    {
+        "name" : "NRJ(France)",
+        "channel": "https://scdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3"
+    },
+    {
+        "name" : "BFM(France)",
+        "channel": "http://bfmbusiness.cdn.dvmr.fr/bfmbusiness"
+    },
+    {
+        "name" : "Alpes 1 Grenoble(France)",
+        "channel": "http://alpes1grenoble.ice.infomaniak.ch/alpes1grenoble-high.mp3"
+    },
+    {
+        "name" : "Africa n1(France)",
+        "channel": "https://african1paris.ice.infomaniak.ch/african1paris-128.mp3"
+    }
+]

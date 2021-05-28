@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Win Reader</title>
+    <meta name="description" content="webradio reader">
+    <link rel="stylesheet" href="/semantic/style.css">
+  </head>
+  <body>
+    <header class="first">win reader</header>
+    <div class="main">
+      <div>
+        <label>channels</label> 
+        <select name="channel" id="channel">
+          <option value="0">Nostalgie(France)</option>
+          <option value="1">NRJ(France)</option>
+          <option value="2">BFM(France)</option>
+          <option value="3">Alpes 1 Grenoble(France)</option>
+          <option value="4">Africa n1(France)</option>
+        </select>  
+      </div>
+      <div class="main1">
+        <div class="main2">
+          <p class="title" id="title"></p>
+          <audio src=""></audio>
+          <button id="previous" class="butt1">previous</button>
+          <button class="play butt2">play</button>
+          <button class="pause butt3">pause</button>
+          <button id="next" class="butt4">next</button>
+          <p class="vol">
+            <input type="range" id="volumbar" min="0" max="100" step="1" value="50">
+          </p> 
+        </div>
+      </div> 
+    </div>
+    <footer>
+      <p>develop by assoa ulrich</p>
+      <p>web host : heroku</p>
+      <p>host website : www.heroku.com</p>
+    </footer>
+    <script src="/semantic/radio.js"></script>
+  </body>
+</html>
