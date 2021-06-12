@@ -21,16 +21,23 @@ httpRequest.onreadystatechange = function(){
 
       let result = JSON.parse(httpRequest.responseText)
       audio.src = result[index].channel
+      title.innerHTML = 'chargement...'
       audio.load()
-      title.innerHTML = result[index].name
+      audio.addEventListener('canplay', function(){
+        title.innerHTML = result[index].name
+      })
+      
 
       choices.addEventListener('change', function(){
         let i = choices.value
         index = parseInt(i, 10)
         audio.src = result[index].channel
+        title.innerHTML = 'chargement...'
         audio.load()
         audio.play()
-        title.innerHTML = result[index].name
+        audio.addEventListener('canplay', function(){
+          title.innerHTML = result[index].name
+        })
       })
 
       
@@ -39,16 +46,22 @@ httpRequest.onreadystatechange = function(){
           index += 1 
           choices.value = index
           audio.src = result[index].channel
+          title.innerHTML = 'chargement...'
           audio.load()
           audio.play()
-          title.innerHTML = result[index].name
+          audio.addEventListener('canplay', function(){
+            title.innerHTML = result[index].name
+          })
         }else{
           index = 0
           choices.value = index
           audio.src = result[index].channel
+          title.innerHTML = 'chargement...'
           audio.load()
           audio.play()
-          title.innerHTML = result[index].name
+          audio.addEventListener('canplay', function(){
+            title.innerHTML = result[index].name
+          })
         }
       })
 
@@ -57,16 +70,22 @@ httpRequest.onreadystatechange = function(){
           index -= 1
           choices.value = index
           audio.src = result[index].channel
+          title.innerHTML = 'chargement...'
           audio.load()
           audio.play()
-          title.innerHTML = result[index].name
+          audio.addEventListener('canplay', function(){
+            title.innerHTML = result[index].name
+          })
         }else{
           index = result.length-1
           choices.value = index
           audio.src = result[index].channel
+          title.innerHTML = 'chargement...'
           audio.load()
           audio.play()
-          title.innerHTML = result[index].name
+          audio.addEventListener('canplay', function(){
+            title.innerHTML = result[index].name
+          })
         }
       })
     }else{
