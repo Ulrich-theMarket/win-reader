@@ -21,28 +21,34 @@ httpRequest.onreadystatechange = function(){
 
       let result = JSON.parse(httpRequest.responseText)
       audio.src = result[index].channel
+      audio.load()
       title.innerHTML = result[index].name
+
       choices.addEventListener('change', function(){
         let i = choices.value
         index = parseInt(i, 10)
         audio.src = result[index].channel
-        title.innerHTML = result[index].name
+        audio.load()
         audio.play()
+        title.innerHTML = result[index].name
       })
 
+      
       next.addEventListener('click', function(){
         if(index < result.length - 1){
           index += 1 
           choices.value = index
           audio.src = result[index].channel
-          title.innerHTML = result[index].name
+          audio.load()
           audio.play()
+          title.innerHTML = result[index].name
         }else{
           index = 0
           choices.value = index
           audio.src = result[index].channel
-          title.innerHTML = result[index].name
+          audio.load()
           audio.play()
+          title.innerHTML = result[index].name
         }
       })
 
@@ -51,14 +57,16 @@ httpRequest.onreadystatechange = function(){
           index -= 1
           choices.value = index
           audio.src = result[index].channel
-          title.innerHTML = result[index].name
+          audio.load()
           audio.play()
+          title.innerHTML = result[index].name
         }else{
           index = result.length-1
           choices.value = index
           audio.src = result[index].channel
-          title.innerHTML = result[index].name
+          audio.load()
           audio.play()
+          title.innerHTML = result[index].name
         }
       })
     }else{
@@ -71,7 +79,7 @@ httpRequest.open("GET", "semantic/web.json", true);
 httpRequest.send()
 
 play.addEventListener('click', function(){
-    audio.play()
+  audio.play()
 })
 
 pause.addEventListener('click', function(){
@@ -81,4 +89,3 @@ pause.addEventListener('click', function(){
 volumbar.addEventListener('change', function(){
     audio.volume = volumbar.value / 100
 })
-
