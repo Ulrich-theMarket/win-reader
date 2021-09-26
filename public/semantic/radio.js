@@ -6,6 +6,7 @@ const choices = document.querySelector("#channel")
 const next = document.querySelector("#next")
 const prev = document.querySelector("#previous")
 const title = document.querySelector("#title")
+const logos = document.querySelector("#img10")
 let index = 0
 
 title.innerHTML = 'chargement...'
@@ -25,6 +26,7 @@ httpRequest.onreadystatechange = function(){
       audio.load()
       audio.addEventListener('canplay', function(){
         title.innerHTML = result[index].name
+        logos.src = result[index].logo
       })
       
 
@@ -37,6 +39,7 @@ httpRequest.onreadystatechange = function(){
         audio.play()
         audio.addEventListener('canplay', function(){
           title.innerHTML = result[index].name
+          logos.src = result[index].logo
         })
       })
 
@@ -51,6 +54,7 @@ httpRequest.onreadystatechange = function(){
           audio.play()
           audio.addEventListener('canplay', function(){
             title.innerHTML = result[index].name
+            logos.src = result[index].logo
           })
         }else{
           index = 0
@@ -61,6 +65,7 @@ httpRequest.onreadystatechange = function(){
           audio.play()
           audio.addEventListener('canplay', function(){
             title.innerHTML = result[index].name
+            logos.src = result[index].logo
           })
         }
       })
@@ -75,6 +80,7 @@ httpRequest.onreadystatechange = function(){
           audio.play()
           audio.addEventListener('canplay', function(){
             title.innerHTML = result[index].name
+            logos.src = result[index].logo
           })
         }else{
           index = result.length-1
@@ -85,6 +91,7 @@ httpRequest.onreadystatechange = function(){
           audio.play()
           audio.addEventListener('canplay', function(){
             title.innerHTML = result[index].name
+            logos.src = result[index].logo
           })
         }
       })
