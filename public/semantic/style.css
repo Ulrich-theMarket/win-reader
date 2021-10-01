@@ -24,7 +24,7 @@ header{
 
 .main{
     padding-top: 50px;
-    min-height: 100vh;
+    height: 100vh;
     background: center / cover no-repeat url("/img/earth.jpg"); 
 }
 
@@ -32,9 +32,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 35vh;
+    height: 300px;
     width: 50%;
-    border: 1px solid rgb(168, 159, 159);
+    border: 2px solid white;
     background: blue;
     margin-left: 20vw;
     margin-top: 20px;
@@ -42,8 +42,8 @@ header{
 }
 
 .main10{
-    height: 30vh;
-    width: 30%;
+    height: 200px;
+    width: 40%;
     border: 1px solid white;
     box-shadow: 2px 4px 30px white;
     
