@@ -80,7 +80,7 @@ button, .vol input{
 }
 
 label{
-    color: blue;
+    color: red;
     font-size: 20px;
     text-transform: capitalize;
 }
