@@ -23,9 +23,21 @@ header{
 }
 
 .main{
-    padding-top: 50px;
     height: 100vh;
     background: center / cover no-repeat url("/img/earth.jpg"); 
+}
+
+.channels{
+    padding-top: 60px;
+}
+
+.globe{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .main1{
@@ -36,9 +48,8 @@ header{
     width: 50%;
     border: 2px solid white;
     background: blue;
-    margin-left: 20vw;
     margin-top: 20px;
-    transform: translate(50px, 50px);
+    padding: 20px;
 }
 
 .main10{
@@ -46,7 +57,6 @@ header{
     width: 40%;
     border: 1px solid white;
     box-shadow: 2px 4px 30px white;
-    
 }
 
 .img10{
