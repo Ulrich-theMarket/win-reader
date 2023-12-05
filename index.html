@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="fIBDuC2W2Y8_TFflLX4BBxCPWFji_OrBdcMp9WcuqpI" />
+    <title>win-reader</title>
+    <meta name="description" content="listen to your webradio with win-reader">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo3.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-tuch-icon" href="./img/logo3.png">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta name="theme-color" content="red">
+  </head>
+  <body>
+    <header class="first">win reader</header>
+    <div class="main">
+      <div class="channels">
+        <label>channels</label> 
+        <select name="channel" id="channel">
+          <optgroup label="France">
+            <option value="0">Nostalgie</option>
+            <option value="1">NRJ</option>
+            <option value="2">BFM</option>
+            <option value="3">Alpes 1 Grenoble</option>
+            <option value="4">Africa n1</option>
+          </optgroup>
+          <optgroup label="Belgique">
+            <option value="5">Chérie FM</option>
+            <option value="6">La Première</option>
+            <option value="7">Musiq 3</option>
+          </optgroup>
+          <optgroup label="Canada">
+            <option value="8">CHMP-FM</option>
+            <option value="9">CKOP-FM</option>
+          </optgroup>
+        </select>  
+      </div>
+      <div class="globe">
+        <div class="main1">
+          <div class="main10">
+            <img src="" alt="logo" class="img10" id="img10">
+          </div>
+          <div class="main2">
+            <p class="title" id="title"></p>
+            <audio src=""></audio>
+            <button id="previous" class="butt1">previous</button>
+            <button class="play butt2">play</button>
+            <button class="pause butt3">pause</button>
+            <button id="next" class="butt4">next</button>
+            <button id="start" class="butt5">Start</button>
+            <p class="vol">
+              <input type="range" id="volumbar" min="0" max="100" step="1" value="50">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>develop by assoa ulrich</p>
+      <p>web host : heroku</p>
+      <p>host website : www.heroku.com</p>
+    </footer>
+    <script src="./radio.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
