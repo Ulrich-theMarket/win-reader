@@ -10,11 +10,6 @@
         "channel": "https://scdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3"
     },
     {
-        "name" : "BFM",
-        "logo" : "./img/BFM-radio.png",
-        "channel": "http://bfmbusiness.cdn.dvmr.fr/bfmbusiness"
-    },
-    {
         "name" : "Alpes 1 Grenoble",
         "logo" : "./img/alpes.png",
         "channel": "http://alpes1grenoble.ice.infomaniak.ch/alpes1grenoble-high.mp3"
@@ -25,28 +20,13 @@
         "channel": "https://african1paris.ice.infomaniak.ch/african1paris-128.mp3"
     },
     {
-        "name" : "Chérie FM",
-        "logo" : "./img/cherie.png",
-        "channel": "http://streamingp.shoutcast.com/Cherie-mp3"
-    },
-    {
         "name" : "La Première",
         "logo" : "./img/Premiere.png",
         "channel": "https://radios.rtbf.be/laprem1ere-128.mp3"
     },
     {
         "name" : "Musiq 3",
-        "logo" : "./img/Musiq 3.png",
+        "logo" : "/img/Musiq 3.png",
         "channel": "https://radios.rtbf.be/musiq3-128.mp3"
-    },
-    {
-        "name" : "CHMP-FM",
-        "logo" : "./img/CHMP-FM.jpg",
-        "channel": "http://cogecomedia.leanstream.co/CHMPFM-MP3"
-    },
-    {
-        "name" : "CKOB-FM",
-        "logo" : "./img/CKOP-FM.jpg",
-        "channel": "http://cogecomedia.leanstream.co/CKOBFM-MP3"
     }
 ]
